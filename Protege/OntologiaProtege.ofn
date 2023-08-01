@@ -1,0 +1,232 @@
+Prefix(:=<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3>
+
+Declaration(Class(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>))
+Declaration(Class(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Destino>))
+Declaration(Class(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>))
+Declaration(Class(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_con_amigos>))
+Declaration(Class(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_familia>))
+Declaration(Class(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_pareja>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Ciudad>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Presupuesto>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada>))
+Declaration(DataProperty(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente>)
+
+InverseObjectProperties(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente>)
+ObjectPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+ObjectPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+
+# Object Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino>)
+
+InverseObjectProperties(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino>)
+ObjectPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Destino>)
+ObjectPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+
+# Object Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+ObjectPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+
+# Object Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+ObjectPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Destino>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Ciudad> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Ciudad>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Ciudad> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Destino>)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad> xsd:int)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida> xsd:dateTime)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta> xsd:dateTime)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado> xsd:boolean)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Destino>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio> xsd:int)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Presupuesto> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Presupuesto>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Presupuesto> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Presupuesto> xsd:int)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes>)
+
+DataPropertyDomain(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente>)
+DataPropertyRange(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes> xsd:int)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_con_amigos> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_con_amigos>)
+
+SubClassOf(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_con_amigos> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+
+# Class: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_familia> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_familia>)
+
+SubClassOf(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_familia> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+
+# Class: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_pareja> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_pareja>)
+
+SubClassOf(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_pareja> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1>)
+
+ClassAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> "21"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> "Soltero")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> "Alvaro")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C1> "3"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2>)
+
+ClassAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Edad> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2> "32"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Estado_civil> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2> "Casado")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nombre> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2> "German")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Nº_acompañantes> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2> "1"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1>)
+
+ClassAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Ciudad> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1> "Cadiz")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D1> "España")
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#es_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Ciudad> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2> "Paris")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pais> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2> "Francia")
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1>)
+
+ClassAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "V123")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "2018-01-01T00:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "2018-01-05T00:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "coche")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "false"^^xsd:boolean)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "85"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V1> "baja")
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2>)
+
+ClassAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_cliente> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#C2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#tiene_destino> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#D2>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "V12")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_salida> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "2018-01-03T00:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Fecha_vuelta> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "2018-01-10T00:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "Avion")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "true"^^xsd:boolean)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "150"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V2> "media")
+
+# Individual: <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3> (<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3>)
+
+ClassAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Viaje_en_pareja> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3>)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Codigo> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3> "VP129")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Metodo_de_transporte> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3> "avion")
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Pagado> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3> "false"^^xsd:boolean)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Precio> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3> "1000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#Temporada> <http://www.semanticweb.org/alvaro/ontologies/2023/5/untitled-ontology-3#V3> "alta")
+
+
+)
